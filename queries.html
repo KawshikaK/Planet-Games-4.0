@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queries & FAQs - PLANET GAMES</title>
+    <link rel="stylesheet" href="stylesQueries.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo">
+              <img src="images/attachment_114272746.jpeg" alt="Game Retailer Logo">
+            </div>
+            <button class="toggle-btn" id="toggleBtn">&#9776;</button>
+            <ul class="nav-links" id="navLinks">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="games.html">Games</a></li>
+              <li><a href="accessories.html">Accessories</a></li>
+              <li><a href="news.html">News</a></li>
+              <li><a href="aboutus.html">About us</a></li>
+              <li><a href="Order.html">Order</a></li>
+              <li><a href="queries.html">Queries & FAQs</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="header">
+            Queries & FAQs
+        </div>
+
+        <div class="content">
+            <section class="faq-section">
+                <h2>Frequently Asked Questions</h2>
+
+                <div class="faq">
+                    <h3>Q: What is the return policy?</h3>
+                    <p>A: We accept returns within 30 days of purchase. Items must be in original condition with all packaging intact. For detailed information, please visit our Return Policy page.</p>
+                </div>
+
+                <div class="faq">
+                    <h3>Q: Do you offer international shipping?</h3>
+                    <p>A: Yes, we do offer international shipping. Shipping costs and delivery times vary depending on the destination. Please refer to our Shipping Information page for more details.</p>
+                </div>
+
+                <div class="faq">
+                    <h3>Q: How can I track my order?</h3>
+                    <p>A: Once your order has been shipped, you will receive a tracking number via email. You can use this number on our Order Tracking page to monitor the status of your shipment.</p>
+                </div>
+
+                <div class="faq">
+                    <h3>Q: How can I contact customer support?</h3>
+                    <p>A: You can reach our customer support team through our Contact Us page or by calling our support hotline. We are available 24/7 to assist you with any inquiries.</p>
+                </div>
+
+                <div class="faq">
+                    <h3>Q: Are there any membership benefits?</h3>
+                    <p>A: Yes, our membership program offers exclusive discounts, early access to new products, and more. Sign up today to start enjoying these benefits.</p>
+                </div>
+
+            </section>
+            <section>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="question">Question:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </div>
+
+        <footer>
+            <div class="footer">
+                <p>&copy; 2024 PLANET GAMES, All Rights Reserved.</p>
+                <ul class="footer-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <script>
+        const toggleBtn = document.getElementById('toggleBtn');
+        const navLinks = document.getElementById('navLinks');
+    
+        toggleBtn.addEventListener('click', () => {
+          navLinks.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Retailer - Order</title>
+    <link rel="stylesheet" href="stylesOrder.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo">
+              <img src="images/attachment_114272746.jpeg" alt="Game Retailer Logo">
+            </div>
+            <button class="toggle-btn" id="toggleBtn">&#9776;</button>
+            <ul class="nav-links" id="navLinks">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="games.html">Games</a></li>
+              <li><a href="accessories.html">Accessories</a></li>
+              <li><a href="news.html">News</a></li>
+              <li><a href="aboutus.html">About us</a></li>
+              <li><a href="Order.html">Order</a></li>
+              <li><a href="queries.html">Queries & FAQs</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="header">
+            Order
+        </div>
+
+    <main>
+        <section id="order-review">
+            <h2>Your Order Summary</h2>
+            <table id="orderTable">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2"><strong>Total</strong></td>
+                        <td id="finalTotal">$0.00</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section id="checkout-form">
+            <h2>Customer Details</h2>
+            <form id="paymentForm">
+                <label>Name: <input type="text" placeholder="Full Name" name="name" required></label>
+                <label>Email: <input type="email" placeholder="example@example.com" name="email" required></label>
+                <label>Phone: <input type="tel" name="phone" placeholder="+94777771122" required></label>
+
+                <h2>Delivery Details</h2>
+                <label>Address: <input type="text" placeholder="Home Address" name="address" required></label>
+                <label>City: <input type="text" placeholder="City" name="city" required></label>
+                <label>Postal Code: <input type="text" placeholder="00000" name="postal" required></label>
+
+                <h2>Payment Information</h2>
+                <label>Card Number: <input type="text" placeholder="1111-2222-3333-4444" name="card" required></label>
+                <label>Expiry Date: <input type="month" name="expiry" required></label>
+                <label>CVV: <input type="text" placeholder="123" name="cvv" required></label>
+                <label><img src="images/card_img.png" alt="payments"></label>
+
+                <button type="submit">Pay</button>
+            </form>
+        </section>
+
+        <section id="confirmationMessage" style="display:none;">
+            <h2>Thank You for Your Purchase!</h2>
+            <p id="messageText"></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <p>&copy; 2024 PLANET GAMES, All Rights Reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="order.js"></script>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Gaming Retailer</title>
+    <link rel="stylesheet" href="stylesContact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo">
+              <img src="images/attachment_114272746.jpeg" alt="Game Retailer Logo">
+            </div>
+            <button class="toggle-btn" id="toggleBtn">&#9776;</button>
+            <ul class="nav-links" id="navLinks">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="games.html">Games</a></li>
+              <li><a href="accessories.html">Accessories</a></li>
+              <li><a href="news.html">News</a></li>
+              <li><a href="aboutus.html">About us</a></li>
+              <li><a href="Order.html">Order</a></li>
+              <li><a href="queries.html">Queries & FAQs</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    <div class="header">
+        Contact Us
+    </div>
+
+    <div class="content">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Contact us</h2>
+                <p> Got questions or need assistance? The team at PLANET GAMES is here to help! 
+                    Whether you're looking for game recommendations, need support with your purchase, or just want to share your gaming passion, 
+                    we'd love to hear from you. Use the form below or email us directly, and we'll respond as quickly as possible. Let's keep the game going!</p>
+                <ul>
+                    <li><span><a href="#"><i class="fa-solid fa-location-dot"></i></a></span> - 123 Main Street, City, Country</li>
+                    <li><span><a href="#"><i class="fa-solid fa-phone"></i></a></span> - 0777712453</li>
+                    <li><span><a href="#"><i class="fa-solid fa-envelope"></i></a></span> - support@planetgames.com</li>
+                </ul>
+                <div class="social-icons">
+                    <li><span><a href="#"><i class="fa-brands fa-instagram"></i></a></span> - INSTERGRAM</li>
+                    <li><span><a href="#"><i class="fa-brands fa-facebook"></i></a></span> - FACEBOOK</li>
+                    <li><span><a href="#"><i class="fa-brands fa-whatsapp"></i></a></span> - WHATSAPP</li>
+                </div>
+            </div>
+            <div class="form-section">
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <input type="text" placeholder="First Name" required>
+                        <input type="text" placeholder="Last Name" required>
+                    </div>
+                    <input type="text" placeholder="Contact Number" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="What can we help you with?" rows="5" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <p>&copy; 2024 PLANET GAMES, All Rights Reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+    </div>
+    <script>
+        const toggleBtn = document.getElementById('toggleBtn');
+        const navLinks = document.getElementById('navLinks');
+    
+        toggleBtn.addEventListener('click', () => {
+          navLinks.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

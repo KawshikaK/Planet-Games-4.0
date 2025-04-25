@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News - PLANET GAMES</title>
+    <link rel="stylesheet" href="stylesNews.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo">
+              <img src="images/attachment_114272746.jpeg" alt="Game Retailer Logo">
+            </div>
+            <button class="toggle-btn" id="toggleBtn">&#9776;</button>
+            <ul class="nav-links" id="navLinks">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="games.html">Games</a></li>
+              <li><a href="accessories.html">Accessories</a></li>
+              <li><a href="news.html">News</a></li>
+              <li><a href="aboutus.html">About us</a></li>
+              <li><a href="Order.html">Order</a></li>
+              <li><a href="queries.html">Queries & FAQs</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="header">
+            News
+        </div>
+
+        <section class="upcoming-games">
+            <div class="games-container">
+                <h2>Upcoming Games</h2>
+                <div class="card">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/wLXizxVIu6k?si=IatMGmBh1FVtkOEO" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>The Alters</p>
+                    <p>April 2025</p>
+                    <a href="#" class="pre-order">Pre-Order</a>
+                </div>
+                <div class="card">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/vovkzbtYBC8?si=Wo5t-U3-JM7xTHE3"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>Assassin's Creed Shadows</p>
+                    <p>April 2025</p>
+                    <a href="#" class="pre-order">Pre-Order</a>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="offers-section">
+            <h2>Offers</h2>
+            <div class="offers-container">
+                <div class="offer-item">
+                    <img src="images/hoffer2.jpg" alt="Offer 1">
+                    <h3>AMAZING!!! PS5 BUNDLE OFFER</h3>
+                    <p>Save up to 40% when you buy PS5 setup!</p>
+                    <a href="accessories.html" class="shop-now">Shop Now</a>
+                </div>
+                <div class="offer-item">
+                    <img src="images/of1.jpg" alt="Offer 2">
+                    <h3>Limited-Time Games Discount</h3>
+                    <p>Buy 4 games and Get 20% off this week!
+                        Closing date - 2nd February 2025
+                    </p>
+                    <a href="games.html" class="shop-now">Shop Now</a>
+                </div>
+                <div class="offer-item">
+                    <img src="images/of2.jpg" alt="Offer 3">
+                    <h3>50% off for Fast Gaming PC</h3>
+                    <p>Intel i7 4th Gen 32GB RAM 2TB + 480GB SSD 4GB GTX 1650 Windows 10</p>
+                    <a href="accessories.html" class="buy-now">Buy Now</a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer">
+                <p>&copy; 2024 PLANET GAMES, All Rights Reserved.</p>
+                <ul class="footer-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <script>
+        const toggleBtn = document.getElementById('toggleBtn');
+        const navLinks = document.getElementById('navLinks');
+    
+        toggleBtn.addEventListener('click', () => {
+          navLinks.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

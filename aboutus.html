@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us - Gaming Retailer</title>
+    <link rel="stylesheet" href="stylesAbout.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo">
+              <img src="images/attachment_114272746.jpeg" alt="Game Retailer Logo">
+            </div>
+            <button class="toggle-btn" id="toggleBtn">&#9776;</button>
+            <ul class="nav-links" id="navLinks">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="games.html">Games</a></li>
+              <li><a href="accessories.html">Accessories</a></li>
+              <li><a href="news.html">News</a></li>
+              <li><a href="aboutus.html">About us</a></li>
+              <li><a href="Order.html">Order</a></li>
+              <li><a href="queries.html">Queries & FAQs</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    <div class="header">
+        About Us
+    </div>
+    <div class="content">
+        <section class="our-story">
+            <h2>Our Story</h2>
+            <p>Welcome to PLANET GAMES, your ultimate gaming destination! Founded with a passion for immersive experiences, we bring you the best in games, accessories, and the latest trends in the gaming world. 
+                From casual players to hardcore enthusiasts, our mission is to fuel your adventures with top-quality products and unmatched service. 
+                Step into our universe, where every gamer belongs.</p>
+        </section>
+        <section class="branches">
+            <h2>Our Branches</h2>
+            <div class="branch">
+                <img src="images/B1.jpg" alt="Branch 1">
+                <p>Store 1: City Centre, L/3 - 17, Kandy.</p>
+            </div>
+            <div class="branch">
+                <img src="images/B2.jpg" alt="Branch 2">
+                <p>Store 2: Level 3, One Galle Face Mall, Colombo 2.</p>
+            </div>
+
+        </section>
+        <div class="content1">
+        <section class="mission-vision">
+            <div class="mission">
+                <h3>Mission</h3>
+                <p>Our mission is to bring joy and excitement to gamers of all ages by offering the best gaming products and experiences. We are committed to providing high-quality products, competitive pricing, and exceptional customer service.</p>
+            </div>
+            <div class="vision">
+                <h3>Vision</h3>
+                <p>Our vision is to be the go-to destination for gamers worldwide. We aim to create a community where gamers can come together to share their passion for gaming and discover new and exciting products.</p>
+            </div>
+        </section>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <p>&copy; 2024 PLANET GAMES, All Rights Reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+    </div>
+    <script>
+        const toggleBtn = document.getElementById('toggleBtn');
+        const navLinks = document.getElementById('navLinks');
+    
+        toggleBtn.addEventListener('click', () => {
+          navLinks.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

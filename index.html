@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Game Retailer - Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+  <!-- Header Section -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="images/attachment_114272746.jpeg" alt="Game Retailer Logo">
+    </div>
+    <button class="toggle-btn" id="toggleBtn">&#9776;</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="games.html">Games</a></li>
+      <li><a href="accessories.html">Accessories</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="aboutus.html">About us</a></li>
+      <li><a href="Order.html">Order</a></li>
+      <li><a href="queries.html">Queries & FAQs</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to PLANET GAMES</h1>
+      <p>Your ultimate destination for gaming!
+        Discover a universe of games, consoles, and accessories tailored for every gamer. 
+        From the latest blockbusters to timeless classics, we've got something for everyone. 
+        Explore, play, and conquer new worlds.
+        Only at PLANET GAMES.</p>
+      <a href="games.html" class="cta-button">Start Shopping</a>
+    </div>
+  </section>
+
+  <!-- Featured Games Section -->
+  <section class="featured-games">
+    <h2>Featured Games</h2>
+    <div class="game-list">
+      <div class="game-item">
+        <img src="images/images.jpg" alt="Game 1">
+        <h3>Black Myth: Wukong</h3>
+        <p>$9.00</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="game-item">
+        <img src="images/capsule_616x353.jpg" alt="Game 2">
+        <h3>Marvel Rivals</h3>
+        <p>$3.50</p>
+        <button>Add to Cart</button>
+        <img src="images/diablo-4-vessel-of-hatred.jpg" alt="Game 3">
+        <h4>Diablo IV: Vessel of Hatred</h4>
+        <P>$8.50</P>
+        <button>Add to Cart</button>
+      </div>
+      <div class="game-item">
+        <img src="images/dgjd5nf-65a2e70e-2fc2-4c16-814b-6c7ccbeb3d23.jpg" alt="Game 4">
+        <h3>Avatar: Frontiers of Pandora</h3>
+        <p>$5.00</p>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Special Offers Section -->
+  <section class="special-offers">
+    <h2>Special Offers</h2>
+    <div class="offer-list">
+      <div class="offer-item">
+        <img src="images/hoffer2.jpg" alt="Offer 1">
+        <h3>Exclusive Bundle</h3>
+        <p>Save up to 40% when you buy this product!</p>
+        <a href="news.html" class="cta-button">Learn More</a>
+      </div>
+      <div class="offer-item">
+        <img src="images/hoffer.jpg" alt="Offer 2">
+        <h4>Limited-Time Discount</h4>
+        <p>Buy 4 games and Get 20% off this week!</p>
+        <a href="games.html" class="cta-button">Shop Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2024 PLANET GAMES, All Rights Reserved.</p>
+      <ul class="footer-links">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </footer>
+  </div>
+  <script>
+    const toggleBtn = document.getElementById('toggleBtn');
+    const navLinks = document.getElementById('navLinks');
+
+    toggleBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>

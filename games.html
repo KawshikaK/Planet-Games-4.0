@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Retailer - Games</title>
+    <link rel="stylesheet" href="stylesG.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo">
+              <img src="images/attachment_114272746.jpeg" alt="Game Retailer Logo">
+            </div>
+            <button class="toggle-btn" id="toggleBtn">&#9776;</button>
+            <ul class="nav-links" id="navLinks">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="games.html">Games</a></li>
+              <li><a href="accessories.html">Accessories</a></li>
+              <li><a href="news.html">News</a></li>
+              <li><a href="aboutus.html">About us</a></li>
+              <li><a href="Order.html">Order</a></li>
+              <li><a href="queries.html">Queries & FAQs</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="header">
+            Games
+        </div>
+    <main>
+        <div class="products-section">
+        <div class="content">
+            <div class="game-item">
+                <img src="images/G1.jpg" alt="Game 1">
+                <p>God of War</p>
+                <span>$8.00</span>
+                <a href="#" class="add-to-cart" data-name="God of War" data-price="8">Add to Cart</a>
+            </div>
+            <div class="game-item">
+                <img src="images/G2.jpg" alt="Game 2">
+                <p>Assassin's Creed Syndicate</p>
+                <span>$11.00</span>
+                <a href="#" class="add-to-cart" data-name="Assassin's Creed Syndicate" data-price="11">Add to Cart</a>
+            </div>
+            <div class="game-item">
+                <img src="images/G3.jpg" alt="Game 3">
+                <p>Hogwarts Legacy</p>
+                <span>$15.00</span>
+                <a href="#" class="add-to-cart" data-name="Hogwarts Legacy" data-price="15">Add to Cart</a>
+            </div>
+            <div class="game-item">
+                <img src="images/G4.jpg" alt="Game 4">
+                <p>Elden Ring</p>
+                <span>$12.00</span>
+                <a href="#" class="add-to-cart" data-name="Elden Ring" data-price="12">Add to Cart</a>
+            </div>
+            <div class="game-item">
+                <img src="images/G5.jpg" alt="Game 5">
+                <p>Forza Horizon 4</p>
+                <span>9.00</span>
+                <a href="#" class="add-to-cart" data-name="Forza Horizon 4" data-price="9">Add to Cart</a>
+            </div>
+            <div class="game-item">
+                <img src="images/G6.jpg" alt="Game 6">
+                <p>Gears of War 4</p>
+                <span>$6.00</span>
+                <a href="#" class="add-to-cart" data-name="Gears of War 4" data-price="6">Add to Cart</a>
+            </div>
+            <div class="game-item">
+                <img src="images/G7.jpg" alt="Game 7">
+                <p>Crackdown 3</p>
+                <span>$7.00</span>
+                <a href="#" class="add-to-cart" data-name="Crackdown 3" data-price="7">Add to Cart</a>
+            </div>
+            <div class="game-item">
+                <img src="images/G8.jpg" alt="Game 8">
+                <p>COD:BlackOps 6</p>
+                <span>$14.00</span>
+                <a href="#" class="add-to-cart" data-name="COD:BlackOps 6" data-price="14">Add to Cart</a>
+            </div>
+            <div class="game-item">
+                <img src="images/G9.jpg" alt="Game 9">
+                <p>Spider-Man Remastered</p>
+                <span>$13.00</span>
+                <a href="#" class="add-to-cart" data-name="Spider-Man Remastered" data-price="13">Add to Cart</a>
+            </div>
+        </div>
+        </div>
+
+        <section id="order-summary">
+            <h2>Order Summary</h2>
+            <table id="summaryTable">
+              <thead>
+                <tr>
+                  <th>Item</th>
+                  <th>Quantity</th>
+                  <th>Price</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="2"><strong>Total</strong></td>
+                  <td id="totalPrice">$0.00</td>
+                </tr>
+              </tfoot>
+            </table>
+        </section>
+      
+        <div class="button-group">
+            <button type="button" onclick="saveFavorites()">Add to Favorites</button>
+            <button type="button" onclick="goToCheckout()">Buy Now</button>
+        </div>
+    </main>
+
+        <footer>
+            <div class="footer">
+                <p>&copy; 2024 PLANET GAMES, All Rights Reserved.</p>
+                <ul class="footer-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </footer>
+
+        <script src="games.js"></script>
+    </div>
+</body>
+</html>

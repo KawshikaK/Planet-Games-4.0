@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(10, 10, 30, 0.9), rgba(200, 50, 50, 0.9)), url(images/backG.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 10px 8%;
+}
+
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.logo img {
+  height: 100px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+  transition: background 0.3s;
+  font-size: 20px;
+}
+
+.nav-links a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+.toggle-btn {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+.header {
+  background-color: #e0e0e0;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.upcoming-games,
+.offers-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.games-container h2 {
+  font-size: 30px;
+  color: #fcfcfc;
+  margin-bottom: 20px;
+}
+
+.games-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background-color: #1d1d1d;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  max-width: 560px;
+  flex: 1 1 45%;
+}
+
+.card p {
+  color: #fff;
+  margin-top: 10px;
+}
+
+.pre-order,
+.shop-now,
+.buy-now {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.pre-order:hover,
+.shop-now:hover,
+.buy-now:hover {
+  background-color: #b40033;
+}
+
+.offers-section {
+  background-color: #b3b3b3;
+  margin-bottom: 40px;
+}
+
+.offers-section h2 {
+  font-size: 30px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.offers-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.offer-item {
+  background-color: #d6d6d6;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: auto;
+}
+
+.offer-item img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.offer-item h3 {
+  margin: 5px 0;
+  font-size: 1.2em;
+  color: black;
+}
+
+.offer-item p {
+  margin: 5px 0;
+  font-size: 0.9em;
+  color: black;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer .footer-links {
+  list-style: none;
+  margin-top: 10px;
+}
+
+footer .footer-links li {
+  display: inline;
+  margin-right: 15px;
+}
+
+footer .footer-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+footer .footer-links li a:hover {
+  color: #ff5733;
+}
+
+@media (max-width: 768px) {
+
+    .toggle-btn {
+      display: block;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #333;
+      width: 100%;
+      display: none;
+    }
+  
+    .nav-links.show {
+      display: flex;
+    }
+    
+  /**header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header nav ul li {
+    margin: 10px 0;
+  } **/
+
+  .games-container {
+    flex-direction: column;
+  }
+
+  .card {
+    flex: 1 1 100%;
+  }
+
+  .offers-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .offer-item {
+    width: 100%;
+  }
+}
